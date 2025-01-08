@@ -1,4 +1,6 @@
-# Users list
+# User List
+
+![User List preview](https://github.com/dopadev/user-list/raw/main/preview/user-list.jpg)
 
 ## Описание
 
@@ -8,11 +10,11 @@
 
 1. Склонируйте репозиторий:
 
-`git clone https://github.com/dopadev/users-list.git`
+`git clone https://github.com/dopadev/user-list.git`
 
 2. Перейдите в директорию проекта:
 
-`cd ./users-list`
+`cd ./user-list`
 
 3. Установите все необходимые зависимости:
 

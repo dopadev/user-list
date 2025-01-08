@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { FixedSizeList as List } from 'react-window'
-import styles from './users-list.module.css'
+import styles from './user-list.module.css'
 
-export const UsersList = ({ users, onClick, icon, hoverIcon }) => {
+export const UserList = ({ users, onClick, icon, hoverIcon }) => {
 	const [hoveredIndex, setHoveredIndex] = useState(null) // индекс наведённого элемента
 
 	// обработчик наведения мыши

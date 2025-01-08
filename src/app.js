@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from 'react'
 import axios from 'axios'
-import { UsersList, Search } from './components'
+import { UserList, Search } from './components'
 import styles from './app.module.css'
 
 import addIcon from './img/icons/add.svg'
@@ -66,7 +66,7 @@ export const App = () => {
 			<div className={styles.users}>
 				<h1>Пользователи</h1>
 				<Search searchPhrase={searchPhraseUsers} onChange={handleSearchUsers} />
-				<UsersList
+				<UserList
 					users={searchPhraseUsers.length >= 3 ? filteredUsers : users}
 					onClick={onAdd}
 					icon={addIcon}
@@ -80,7 +80,7 @@ export const App = () => {
 					searchPhrase={searchPhraseAddedUsers}
 					onChange={handleSearchAddedUsers}
 				/>
-				<UsersList
+				<UserList
 					users={
 						searchPhraseAddedUsers.length >= 3 ? filteredAddedUsers : addedUsers
 					}
